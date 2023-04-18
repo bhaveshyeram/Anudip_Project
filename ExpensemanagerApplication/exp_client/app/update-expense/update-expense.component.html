@@ -1,0 +1,45 @@
+<div class="container add-student-container">
+    <div>
+      <mat-card>
+        <h3 style="text-align: center">Update Expense Data</h3>
+        <div>
+          <mat-form-field appearance="outline" class="form-element">
+            <mat-label>Particular</mat-label>
+            <input matInput  [(ngModel)] ="expense.particular" />
+          </mat-form-field>
+        </div>
+  
+        <div>
+            <mat-form-field appearance="outline" class="form-element">
+              <mat-label>date</mat-label>
+              <input matInput  [(ngModel)] ="expense.date" />
+            </mat-form-field>
+          </div>
+
+          <div>
+            <mat-form-field appearance="outline" class="form-element">
+              <mat-label>item</mat-label>
+              <input matInput  [(ngModel)] ="expense.item" />
+            </mat-form-field>
+          </div>
+
+          <div>
+            <mat-form-field appearance="outline" class="form-element">
+              <mat-label>rate</mat-label>
+              <input matInput  [(ngModel)] ="expense.rate" />
+            </mat-form-field>
+          </div>
+
+          <!-- <div>
+            <mat-form-field appearance="outline" class="form-element">
+              <mat-label>Order Date</mat-label>
+              <input matInput  [(ngModel)] ="expense.total" />
+            </mat-form-field>
+          </div> -->
+          
+           <div >
+          <button mat-raised-button color="primary"   (click)="update()">Update</button>
+        </div>
+      </mat-card>
+    </div>
+  </div>
